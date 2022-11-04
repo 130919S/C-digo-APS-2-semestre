@@ -1,0 +1,37 @@
+frase = "O mundo está se tornando mais quente. Os atos do homem e seus descuidos para com o meio ambiente está provocando" \
+        " o aquecimento global. O planeta grita por mudanças ou o resultado será catastrófico"
+
+
+def criptografar(frase):
+    frase_crip = " "
+    for i in frase:
+        frase_crip = frase_crip + chr(ord(i) + 3)
+
+    return frase_crip
+
+
+frase_crip = " R#pxqgr#hvwä#vh#wruqdqgr#pdlv#txhqwh1#Rv#dwrv#gr#krphp#h#vhxv#ghvfxlgrv#sdud#frp#r#phlr#dpelhqwh#hvwä#suryr" \
+             "fdqgr#r#dtxhflphqwr#joredo1#R#sodqhwd#julwd#sru#pxgdqêdv#rx#r#uhvxowdgr#vhuä#fdwdvwuöilfr"
+
+visualizar = ''
+
+while visualizar != 'S':
+
+    def descriptografar(frase_crip):
+        frase = ''
+
+        for i in frase_crip:
+            frase = frase + chr(ord(i) - 3)
+
+        return frase
+
+
+    frase = frase_crip
+
+    print(frase)
+
+    visualizar = input('Deseja visualizar a frase descriptografada?: Digite [S] para sim: ').upper()
+
+    if visualizar == 'S':
+        print(descriptografar(frase_crip))
+
